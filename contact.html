@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laksh Overseas</title>
+    <link rel="stylesheet" href="/styles/contact.css"/>
+</head>
+<body>
+    <navbar>
+        <div class="navbar">
+            <div class="navbar_logo">
+                <img class="logo" src="./images/logo_nobg.png"/>
+                <h1>LAKSH OVERSEAS</h1>
+            </div>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </navbar>
+    <section class="contact_section">
+        <h2>Contact Us</h2>
+        <div class="contact_and_address">
+        <div class="phone_number">
+            <div class="details">
+                <img src="./images/location.png"/>
+                <p><b>Laksh Overseas Consultancy</b> <br/>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>Eaque atque ipsa, aut assumenda officia enim voluptatibus.<br/> Hyderabad, Telangana, India</p>
+            </div>
+            <div class="details">
+                <img src="./images/phone.png"/>
+                <p>+91 7801075129 <br/>
+                +91 9676501599</p>
+            </div>
+            <div class="details">
+                <img src="./images/email.png"/>
+                <a href="mailto:overseaslaksh@gmail.com"> overseaslaksh@gmail.com</a>
+            </div>
+            <div class="details">
+                <img src="./images/whatsapp.png"/>
+                <button class="whatsappbtn" onclick=openPopup()> Chat on Whatsapp</button>
+                <div class="whatsapp_block" tabindex="0">
+                    <img src="./images/whatsappqr.jpeg"/><br/>
+                    <a href="https://web.whatsapp.com/send?phone=917801075129" target="_blank"><button class="openchat">Open Chat</button></a>
+                <button class="closebtn" onclick=closePopup()>&times;</button>
+                </div>
+                <script>
+                    var qr=document.querySelector(".whatsapp_block");
+                    function openPopup(){
+                        qr.style.display="block";
+                    }
+                    function closePopup(){
+                        qr.style.display="none";
+                    }
+            
+                </script>
+            </div>
+        </div>
+            <div class="Map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121773.45508892256!2d78.25556034335938!3d17.48743060000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9193ddc3709d%3A0x26bce9a14fb4b177!2sOaks%20Overseas!5e0!3m2!1sen!2sin!4v1693325600991!5m2!1sen!2sin" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+    </section>
+    <section class="leaflets">
+        <h2>Leaflets</h2>
+        <hr/>
+        <div class="carousel_with_buttons">
+        <button class="prev-button">&#8249;</button>
+        <div class="carousel_bg">
+        <div class="carousel_container" data-ride="carousel">
+            <div class="carousel">   
+                <div class="carousel_item active">
+                    <img src="/images/leaflets/1.PNG"/> 
+                </div>
+                <div class="carousel_item">
+                    <img src="/images/leaflets/2.PNG"/>
+                </div>
+                <div class="carousel_item">
+                    <img src="/images/leaflets/3.PNG"/>
+                </div>
+                <div class="carousel_item">
+                    <img src="/images/leaflets/4.PNG"/>
+                </div>
+                <div class="carousel_item">
+                    <img src="/images/leaflets/5.JPEG"/>
+                </div>
+                <div class="carousel_item">
+                    <img src="/images/leaflets/6.PNG"/>
+                </div>
+                <div class="carousel_item">
+                    <img src="/images/leaflets/7.PNG"/>
+                </div>
+                <div class="carousel_item">
+                    <img src="/images/leaflets/8.PNG"/>
+                </div>
+                <div class="carousel_item">
+                    <img src="/images/leaflets/9.JPEG"/>
+                </div>
+                <div class="carousel_item">
+                    <img src="/images/leaflets/10.JPEG"/>
+                </div>
+                <div class="carousel_item">
+                    <img src="/images/leaflets/11.JPEG"/>
+                </div>
+            </div>
+        </div>
+        </div>
+        <button class="next-button">&#8250;</button>
+        </div>
+    </section>
+
+    <script>const carousel = document.querySelector('.carousel');
+        const prevButton = document.querySelector('.prev-button');
+        const nextButton = document.querySelector('.next-button');
+        let currentPosition = 0;
+        
+        prevButton.addEventListener("click", () => {
+          if (currentPosition > 0) {
+            currentPosition--;
+            carousel.style.transform = `translateX(-${currentPosition * 36}%)`;
+          }
+        });
+        
+        nextButton.addEventListener("click", () => {
+          if (currentPosition < 13 - 3) {
+            currentPosition++;
+            carousel.style.transform = `translateX(-${currentPosition * 36}%)`;
+          }
+        });
+        </script>
+        <footer>
+            <div class="footer_about">
+                <h2>About</h2>
+                <hr/>
+                <p>Laksh Overseas Consultancy is the one-stop solution for all your international educational requirements and work visas.
+                    Our activity is to assist students in making the best choice with regards to pursuing their education in overseas educational 
+                    institutions.</p>
+            </div>
+            <div class="footer_address">
+                <h2>Address</h2>
+                <hr/>
+                <h3>Laksh Overseas Consultancy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>Eaque atque ipsa, aut assumenda officia enim voluptatibus.<br/> Hyderabad, Telangana, India</p>
+            </div>
+            <div class="socials">
+                <h2>Follow Our Socials</h2>
+                <hr/>
+                <a href="https://instagram.com/lakshoverseas"><img class="instagram" src="./images/instagram.png"/> <p> @lakshoverseas</p></a>
+                <img class="footer_logo" src="./images/logo_nobg - Copy.png"/>
+            </div>
+        </footer>
+       
+</body>
+</html>

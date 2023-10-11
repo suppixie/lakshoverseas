@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laksh Overseas</title>
+    <link rel="stylesheet" href="./styles/about.css"/>
+</head>
+<body>
+    <navbar>
+        <div class="navbar">
+            <div class="navbar_logo">
+                <img class="logo" src="./images/logo_nobg.png"/>
+                <h1>LAKSH OVERSEAS</h1>
+            </div>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </navbar>
+    <div class="whatsapp_icon" onclick=openPopup()><img class="whatsapp_icon" src="./images/whatsappicon.png"/></div>
+    <div class="whatsapp_block" tabindex="0">
+        <img src="./images/whatsappqr.jpeg"/><br/>
+        <a href="https://web.whatsapp.com/send?phone=917801075129" target="_blank"><button class="openchat">Open Chat</button></a>
+    <button class="closebtn" onclick=closePopup()>&times;</button>
+    </div>
+    <script>
+        var qr=document.querySelector(".whatsapp_block");
+        function openPopup(){
+            qr.style.display="block";
+        }
+        function closePopup(){
+            qr.style.display="none";
+        }
+
+    </script>
+    <section class="about_section">
+        <h2>About us</h2>
+        <div class="about_container">
+            <div class="content">
+        <p>Laksh Overseas Consultancy serves as your comprehensive hub for international education needs and work visas. Our primary goal is to guide students in making optimal decisions about pursuing education at foreign institutions. We offer valuable insights into higher education across diverse countries, including USA, UK, Canada, Australia, New Zealand, Singapore, Dubai, Europe, Germany, France, Malta, Latvia, Poland, Spain, Greece, Austria, Lithuania, Sweden, Hungary, and Cyprus.
+            <br/>
+            <br/>
+            <h3>Our Mission</h3>
+            Additionally, we are dedicated to mentoring students in preparing for various admission and English proficiency tests like GRE, GMAT, SAT, ACT, IELTS, TOEFL, and PTE. These scores play a pivotal role in securing university admissions. Our aim is to equip our aspirants to meet global standards, opening doors to new opportunities worldwide.
+        </p></div>
+        <div class="study_img">
+            <img src="./images/studying.jpg"/>
+        </div>
+    </div>
+    <hr class="simple_hr"/>
+    <div class="team">
+        <h2>Proprietor</h2>
+        <hr class="about_hr"/>
+        <h3>Saikumar G</h3>
+        <p>Managing Director</p>
+    </div>
+    </section>
+    <footer>
+        <div class="footer_about">
+            <h2>About</h2>
+            <hr/>
+            <p>Laksh Overseas Consultancy is the one-stop solution for all your international educational requirements and work visas.
+                Our activity is to assist students in making the best choice with regards to pursuing their education in overseas educational 
+                institutions.</p>
+        </div>
+        <div class="footer_address">
+            <h2>Address</h2>
+            <hr/>
+            <p><b>Laksh Overseas Consultancy,</b><br/>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>Eaque atque ipsa, aut assumenda officia enim voluptatibus.<br/> Hyderabad, Telangana, India</p>
+        </div>
+        <div class="socials">
+            <h2>Follow Our Socials</h2>
+            <hr/>
+            <a href="https://instagram.com/lakshoverseas"><img class="instagram" src="./images/instagram.png"/> <p> @lakshoverseas</p></a>
+            <img class="footer_logo" src="./images/logo_nobg - Copy.png"/>
+        </div>
+    </footer>
+ 
+    
+</body>
+</html>
